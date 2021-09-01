@@ -1,0 +1,21 @@
+{
+  "name": "Next.js Starter",
+  "short_name": "Next Starter",
+  "icons": [
+    {
+      "src": "/apple-touch-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "black",
+  "background_color": "black",
+  "display": "standalone",
+  "orientation": "portrait"
+}
