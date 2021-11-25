@@ -10,9 +10,9 @@
     @apply text-gray-700 dark:text-gray-200;
   }
   .surface1 {
-    @apply bg-gray-100 dark:bg-gray-800;
+    @apply bg-white dark:bg-gray-700;
   }
   .surface2 {
-    @apply bg-gray-200 dark:bg-gray-700;
+    @apply bg-gray-100 dark:bg-gray-800;
   }
 }
