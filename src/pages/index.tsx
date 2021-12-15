@@ -11,7 +11,7 @@ const App = () => {
       />
       <div>
         <p className="text-3xl text2">
-          <Emoji symbol="👋" label="Hello" /> Hey
+          Hello <Emoji symbol="👋" label="Hello" />
         </p>
       </div>
     </Layout>
