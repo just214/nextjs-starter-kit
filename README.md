@@ -1,4 +1,4 @@
-# Claimbook
+# Next.js Starter
 
 Features:
 
