@@ -1,3 +1,4 @@
+// Inspired by https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs?utm_campaign=tailwind-weekly-73&utm_source=Tailwind+Weekly
 import Head from "next/head";
 
 export type SEOProps = {
@@ -8,7 +9,12 @@ export type SEOProps = {
 };
 
 export const SEO = (props: SEOProps) => {
-  const { title, description, url, icon } = props;
+  const {
+    title = "Next.js Starter",
+    description = "A Next.js starter with TypeScript, TailwindCSS, and more.",
+    url = "/",
+    icon = "icon.svg",
+  } = props;
   return (
     <Head>
       <title>{title}</title>
@@ -26,28 +32,10 @@ export const SEO = (props: SEOProps) => {
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={icon} />
-
-      <link rel="apple-touch-icon" href="/apple-touch-icon.png"></link>
-      <link
-        rel="apple-touch-icon-precomposed"
-        sizes="144x144"
-        href="/apple-touch-icon-144x144.png"
-      />
-      <link
-        rel="apple-touch-icon-precomposed"
-        sizes="152x152"
-        href="/apple-touch-icon-152x152.png"
-      />
-      <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-      <link rel="icon" type="image/png" href="/icon.svg" sizes="32x32" />
-      <link rel="icon" type="image/png" href="/icon.svg" sizes="16x16" />
-      <meta name="application-name" content={props.title} />
-      <meta name="msapplication-TileColor" content="#f5f5f5" />
-      <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-      <meta name="apple-mobile-web-app-title" content={props.title} />
-      <link rel="manifest" href="/manifest.json" />
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+      <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      <link rel="manifest" href="/manifest.webmanifest" />
     </Head>
   );
 };

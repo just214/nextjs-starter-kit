@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 @layer utilities {
-  .text1 {
+  .text {
     @apply text-gray-800 dark:text-gray-100;
   }
-  .text2 {
+  .text-alt {
     @apply text-gray-700 dark:text-gray-200;
   }
-  .surface1 {
-    @apply bg-white dark:bg-gray-700;
+  .surface {
+    @apply bg-white dark:bg-gray-800;
   }
-  .surface2 {
-    @apply bg-gray-100 dark:bg-gray-800;
+  .surface-alt {
+    @apply bg-gray-100 dark:bg-gray-900;
   }
 }
