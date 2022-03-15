@@ -1,4 +1,4 @@
-# Next.js Starter
+# nextjs-starter-kit
 
 Features:
 
