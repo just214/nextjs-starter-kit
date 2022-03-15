@@ -1,5 +1,3 @@
-import { FaUser } from "react-icons/fa";
-
 export type LayoutProps = {
   children?: React.ReactNode;
 };

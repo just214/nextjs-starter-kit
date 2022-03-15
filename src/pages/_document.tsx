@@ -11,7 +11,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head />
-        <body className="text1 surface1">
+        <body className="text surface">
           <Main />
           <NextScript />
         </body>

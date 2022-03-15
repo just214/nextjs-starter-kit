@@ -10,7 +10,7 @@ const App = () => {
         description="A Next.js starter with TypeScript, TailwindCSS, and more."
       />
       <div>
-        <p className="text-3xl text2">
+        <p className="text-3xl">
           Hello <Emoji symbol="👋" label="Hello" />
         </p>
       </div>
